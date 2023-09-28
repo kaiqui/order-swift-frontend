@@ -88,6 +88,7 @@ function SignIn() {
               fontWeight="medium"
               textGradient
             >
+            
               Inscrever-se
             </SoftTypography>
           </SoftTypography>

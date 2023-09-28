@@ -117,20 +117,20 @@ function SignUp() {
   return (
     <BasicLayout
       title="Bem Vindo!"
-      description="Esse é o Cadastro de Vendedor na Plataforma"
+      description="Aqui Você Encontra as Melhores Comidas"
       image={curved6}
     >
       {errorMessage && <SoftAlert color="primary">{errorMessage}</SoftAlert>}
       <Card>
         <SoftBox p={3} mb={1} textAlign="center">
           <SoftTypography variant="h5" fontWeight="medium">
-            Registro do Vendedor
+            Registro do Cliente
           </SoftTypography>
         </SoftBox>
         <SoftBox pt={2} pb={3} px={3}>
           <SoftBox component="form" role="form" onSubmit={handleSubmit} >
           <SoftBox mb={2}>
-              <SoftInput required  type="text" placeholder="Razão Social" value={razaoSocial} onChange={(e) => setRazaoSocial(e.target.value)} />
+              <SoftInput required  type="text" placeholder="Como Gostaria de Ser Chamado?" value={razaoSocial} onChange={(e) => setRazaoSocial(e.target.value)} />
             </SoftBox>
             <SoftBox mb={2}>
               <SoftInput required type="text" placeholder="Nome Completo"  value={nomeCompleto} onChange={(e) => setNomeCompleto(e.target.value)} />

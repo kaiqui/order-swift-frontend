@@ -42,6 +42,7 @@ import Billing from "layouts/billing";
 import Profile from "layouts/profile";
 import SignIn from "layouts/authentication/sign-in";
 import SignUp from "layouts/authentication/sign-up";
+import SignUpClient from "layouts/authentication/sign-up-client";
 
 // Soft UI Dashboard React icons
 import Shop from "examples/Icons/Shop";
@@ -107,6 +108,15 @@ const routes = [
     route: "/authentication/sign-up",
     icon: <SpaceShip size="12px" />,
     component: <SignUp />,
+    noCollapse: true,
+  },
+  {
+    type: "collapse",
+    name: "Sign Up Client",
+    key: "sign-up-client",
+    route: "/authentication/sign-up-client",
+    icon: <SpaceShip size="12px" />,
+    component: <SignUpClient />,
     noCollapse: true,
   },
 ];
